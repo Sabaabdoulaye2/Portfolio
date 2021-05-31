@@ -1,0 +1,157 @@
+:root {
+  --color-primary: #02475e;
+  --color-secondary: #4a4d4c;
+  --color-accent: rgb(34, 162, 204);
+  --color-body: #252525;
+  --color-headings: #02475e;
+
+  --font-headings: "Open Sans", sans-serif;
+  --font-body: "Zilla Slab", serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Zilla Slab", serif;
+  color: var(--color-body);
+  line-height: 1.5;
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-body);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p,
+span {
+  font-family: var(--font-body);
+  font-size: 2rem;
+}
+
+strong {
+  color: var(--color-accent);
+}
+li {
+  font-size: 2rem;
+  text-align: left;
+}
+/* Links */
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: var(--font-headings);
+}
+
+/* Font awesome icons */
+/*Font awesome*/
+.fas,
+.fab {
+  font-size: 20rem;
+  color: var(--color-accent);
+}
+
+.icon-html {
+  color: tomato;
+}
+
+.icon-javascript {
+  color: rgb(216, 216, 0);
+}
+
+.icon-python {
+  color: rgb(28, 236, 191);
+}
+
+.icon-responsive-design {
+  color: rgb(34, 34, 34);
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p,
+  span {
+    font-size: 2.5rem;
+  }
+}
+
+/* Special classes */
+.emphasis {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.color-light {
+  background: #efefef;
+}
+
+.color-white {
+  color: white;
+}
+.color-cyan {
+  color: cyan;
+}
+.color-green {
+  color: rgb(90, 255, 49);
+}
+
+.color-red {
+  color: rgb(243, 3, 3);
+}
+.color-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.color-secondary {
+  background: var(--color-secondary);
+}
+.color-accent {
+  background-color: var(--color-accent);
+}
+
+.font-small {
+  font-size: 3rem;
+}
+
+.font-white {
+  color: rgb(161, 161, 161);
+}
+
+/* Text styles */
+.font-heading {
+  font-family: var(--font-headings), sans-serif;
+}

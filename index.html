@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author"content="Saba Abdoulaye">
+    <meta name="description" content="Saba Abdoulaye's Portfolio Website">
+    <meta name="keywords" content="Portfolio, Saba Abdoulaye">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.ico">
+    <title>Saba Abdoulaye | Accueil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Zilla+Slab&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9ba66107d9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--Header section-->
+    <header>
+      <!-- Navigation menu -->
+      <nav class="navbar">
+        <a href="#" class="nav-brand bold">Saba Tech</a>
+        <ul class="nav-menu">
+          <li class="nav-item active" id="home-link">
+            <a href="#" class="nav-link">Accueil</a>
+          </li>
+          <li class="nav-item" id="biography-link">
+            <a href="#autobiography" class="nav-link">Biographie</a>
+          </li>
+          <li class="nav-item" id="competence-link">
+            <a href="#skills" class="nav-link">Compétences</a>
+          </li>
+          <li class="nav-item" id="contacts-link">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+        <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main content of the page -->
+    <main>
+      <!-- Banner -->
+      <article class="container--fluid color-primary banner">
+        <h1 id="Typewriter1"></h1>
+        <div class="container"></div>
+        <span>Avez-vous besoin d'un beau site web </span>
+        <span>pour promouvoir vos activités professionnelles: école, entreprise...? </span>
+        <h1 id="banner-heading" class="color-accent">Alors, vous êtes au bon endroit!</h2>
+      </article>
+
+      <!-- Autobiography section -->
+    
+      <section id="autobiography">
+        <div class=" container big-title">
+          <h2>Autobiographie</h2>
+        </div>
+        <article class="container--fluid grid-3">
+          <article class="grid-item introduction border-bottom">
+            <h3 class="title font-heading">Qui suis-je?</h3>
+            <img
+              src="images/me.jpg"
+              alt="A photo of me"
+              class="border-rounded my-picture"
+            />
+            <p class="description">
+              Salut! Je m'appelle <strong class="my name">Saba Abdoulaye</strong>, je suis developpeur Web
+              Front-End free-lance résidant en Côte d'Ivoire.
+            </p>
+          </article>
+
+          <article class="grid-item border-bottom">
+            <h3 class="title font-heading">Qu'est ce que je fais?</h3>
+            <span class="fas fa-question-circle"></span>
+            <p class="description text-small">
+              Je développe des sites et applications web professionnels pour
+              écoles, entreprises et particuliers
+            </p>
+          </article>
+
+          <article class="grid-item">
+            <h3 class="title font-heading">Pourquoi moi?</h3>
+            <span class="fas fa-check-circle"></span>
+            <ul class="description">
+              <li>Je suis passionné par ce métier</li>
+              <li>
+                Je développe de beaux sites web intéractifs qui s'adaptent à différentes
+                résolutions d'écrans
+              </li>
+              <li>Garantie satisfait ou remboursé</li>
+            </ul>
+          </article>
+        </article>
+      </section>
+
+      <!-- Special offer section -->
+      <section class="special-offer container--fluid color-accent">
+        <div id="offer-heading" class="offer-heading container big-title">
+          <h1 class="font-heading">Caractéristiques des sites que je développe</h1>
+          <button class="toggle-features"><a href="#autobiography"><span class="fas fa-arrow-circle-down"></span></a></button>
+        </div>
+        <article id="features" class="features grid-3">
+          <div class="offer__item">
+            <h3 class="offer__item-title">Rapidité et accessibilité</h3>
+            <span class="offer__item-image fas fa-tachometer-alt"></span>
+            <p class="offer__item-description">Les sites web que je developpe sont facilement accessibles et se chargent rapidement car j'emploie
+              des techniques d'optimisation modernes et uniques.</p>
+          </div>
+          <div class="offer__item">
+            <h3 class="offer__item-title">Beauté et professionnalisme</h3>
+            <span class="offer__item-image fas fa-check-circle"></span>
+            <p class="offer__item-description">Je developpe des sites web d'aspects à la fois attractif et professionnelles
+              qui assurent une expérience de navigation optimale et satisfaisante.
+            </p>
+          </div>
+          <div class="offer__item">
+            <h3 class="offer__item-title">Prix abordables</h3>
+            <span class="offer__item-image fas fa-dollar-sign"></span>
+            <p class="offer__item-description">Mes prix très abordables. 
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="newsletter container--fluid">
+          <h2 class="font-heading">Souscrivez à ma newsletter</h2>
+          <form name="contact" netlify>
+            <div class="flex-column form-flex">
+              <label for="first-name">Nom: </label>
+              <input type="text" required name="first-name" id="first-name"> <br>
+              <label for="first-name">Email: </label>
+              <input type="email" required name="first-name" id="first-name">
+              <button class="btn" type="submit">S'inscrire</button>
+            </div>
+
+          </form>
+      </section>
+      
+      <!-- Skills section -->
+      <section id="skills">
+        <div id="skills-title" class="container big-title">
+          <h1 class="font-heading">Mes compétences</h1>
+        </div>
+        <article class="grid-3">
+          <article class="card grid-item">
+            <h3 class="card__title">HTML5</h3>
+            <span class="card__image fab fa-html5 icon-html"></span>
+            <p class="card__description">
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small font-white"></span>
+            </p>
+          </article>
+          <article class="card grid-item">
+            <h3 class="card__title">CSS3</h3>
+            <span class="card__image fab fa-css3-alt icon-css"></span>
+            <p class="card__description">
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small font-white"></span>
+            </p>
+          </article>
+          <article class="card grid-item">
+            <h3 class="card__title">Javascript</h3>
+            <span class="card__image fab fa-js-square icon-javascript"></span>
+            <p class="card__description">
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small font-white"></span>
+              <span class="fas fa-star font-small font-white"></span>
+            </p>
+          </article>
+          <article class="card grid-item">
+            <h3 class="card__title">Python 3</h3>
+            <span class="card__image fab fa-python icon-python"></span>
+            <p class="card__description">
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small font-white"></span>
+            </p>
+          </article>
+          <article class="card grid-item">
+            <h3 class="card__title">Responsive Design</h3>
+            <span class="card__image fas fa-mobile icon-responsive-design"></span>
+            <p class="card__description">
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small"></span>
+              <span class="fas fa-star font-small font-white"></span>
+            </p>
+          </article>
+        </article>
+      </section>
+
+      <!-------------------- Contact me section -------------->
+      <section id="contacts" class="contacts container--fluid color-primary flex-column">
+        <article class="container">
+          <h3 id="available" class=" heading font-heading color-white">Disponible pour recrutement!</h3>
+        </article>
+        <article class="container">
+          <h1 class="contacts-title color-white font-heading">Me contacter</h1>
+        </article>
+
+        
+        <article class="container">
+          <h3 class="heading social-media font-heading color-white">Mail et réseaux sociaux</h3>
+        </article>
+        <article class="media flex-row">
+          <a href="mailto:Saba.abdoulaye2@gmail.com" target="_blank"> 
+            <span class="fas fa-envelope-square color-red" ></span>
+          </a>
+          <a href="https://web.facebook.com/Saba.abdoulaye2/" target="_blank"> 
+            <span class="fab fa-facebook color-cyan"></span>
+          </a>
+          <a href="https://wa.me/2250545845598" target="_blank">
+            <span class="fab fa-whatsapp color-green"></span>
+          </a>
+        </article>
+        <article class="container">
+          <h3 class="heading font-heading color-white">Téléphone</h3>
+          <span class="font-heading">+225 05 45 84 55 98</span>
+        </article>
+        
+        <span class="font-heading copyright">Copyright &copy; Saba Abdoulaye 2021</span>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
